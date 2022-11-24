@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+* {
+  font-family: "Roboto";
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: #1890FF;
+  border-radius: 2px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #ffffff;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.logo {
+  background: none;
+  color: #000000;
+}
+.logo__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 11px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  background: none;
+  color: #000000;
+}
+.header__input {
+  width: 690px;
+  height: 40px;
+  padding: 8px 12px 8px 32px;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  background: url(../../img/input_logo.svg) no-repeat 10px;
+}
+.header__user-button {
+  margin-right: 10px;
+  max-width: 96px;
+}
+.header__container-button {
+  color: #595959;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  max-width: 113px;
+}
+.header__button-logo {
+  margin-right: 4px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  max-width: 442px;
+  min-height: 42px;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.section__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.section__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 48px;
+  margin-right: 26px;
+}
+.section__rate {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFC107;
+}
+.section__wrapper {
+  display: flex;
+  max-width: 294px;
+  margin-left: auto;
+  align-items: center;
+}
+.section__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 220px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8C8C8C;
+}
+.section__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-bottom: 112px;
+}
+
+.card {
+  max-width: 384px;
+  max-height: 413px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  background: #FFFFFF;
+  padding-bottom: 30px;
+  padding-left: 24px;
+}
+.card__image {
+  margin-bottom: 25px;
+}
+.card__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.card__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+  margin-bottom: 25px;
+}
+.card__button {
+  max-width: 127px;
+  min-height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.card__click {
+  margin-right: 4px;
+}
+.card__wrapper {
+  display: flex;
+  align-items: center;
+}
+.card__price {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 32px;
+}
+
+.footer {
+  background-color: #fff;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 157px;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: #000000;
+  cursor: pointer;
+}
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  margin-right: auto;
+  margin-left: 0;
+}
+.footer-list__item {
+  margin-left: 0;
+  margin-right: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+  cursor: pointer;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+.footer-right__instagram {
+  cursor: pointer;
+}
+.footer-right__vk {
+  cursor: pointer;
+}
+.footer-right__facebook {
+  margin-left: 21px;
+  margin-right: 21px;
+  cursor: pointer;
+}/*# sourceMappingURL=restaurantStyle.css.map */
