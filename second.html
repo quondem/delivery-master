@@ -72,7 +72,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="ugor">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">250 ₽</span>
@@ -87,7 +87,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="california">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">395 ₽</span>
@@ -102,7 +102,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="okinava">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">250 ₽</span>
@@ -117,7 +117,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="cesar">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">250 ₽</span>
@@ -132,7 +132,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="maki">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">250 ₽</span>
@@ -147,7 +147,7 @@
             >
             <div class="card__wrapper">
               <button class="card__button">
-                <span class="card__click">В корзину</span>
+                <span class="card__click" data-id="krevetka">В корзину</span>
                 <img src="img/card-basket.png" alt="" class="card__basket" />
               </button>
               <span class="card__price">250 ₽</span>
@@ -180,5 +180,31 @@
         </div>
       </div>
     </footer>
+    <div class="fixed-overlay disable">
+      <div class="basket">
+      <div class="basket__wrapper">
+        <h2 class="basket__title">Корзина</h2>
+      <img src="img/close.svg" alt="" class="basket__close">
+      </div>
+      <div class="basket__items">
+        <div class="basket__container">
+          <div class="item-basket">
+            <span class="item__name">Ролл угорь стандарт</span>
+            <span class="item__cost">250 ₽</span>
+            <button class="item__button minus">-</button>
+            <span class="item__count">1</span>
+            <button class="item__button item__plus plus">+</button>
+            <img src="img/line.svg" alt="" class="item__line">
+            </div>
+        </div>
+        <div class="basket__order">
+          <button class="basket__cost">1250 ₽</button>
+          <button class="basket__checkout">Оформить заказ</button>
+          <button class="basket__out">Отмена</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

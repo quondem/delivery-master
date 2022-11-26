@@ -242,4 +242,123 @@ h2 {
   margin-left: 21px;
   margin-right: 21px;
   cursor: pointer;
+}
+
+.fixed-overlay {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.basket {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: 780px;
+  max-height: 800px;
+  transform: translate(-50%, -50%);
+  padding: 41px 40px;
+  overflow: auto;
+}
+.basket__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.basket__close {
+  cursor: pointer;
+}
+.basket__items {
+  max-height: 500px;
+}
+.basket__order {
+  display: flex;
+  align-items: center;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 52px;
+}
+.basket__cost {
+  background: #262626;
+  border-radius: 5px;
+  width: 106px;
+  height: 53px;
+  padding: 15px 22px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+.basket__checkout {
+  margin-left: auto;
+  margin-right: 18px;
+}
+.basket__out {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  width: 88px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.item-basket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.item__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+.item__cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-right: 47px;
+  margin-left: auto;
+}
+.item__button {
+  padding: 8px 16px;
+  width: 39px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #40A9FF;
+  border-radius: 2px;
+  color: #40A9FF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.item__plus {
+  padding: 8px 14px;
+}
+.item__count {
+  margin: 0 13px;
+}
+.item__line {
+  width: 710px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.disable {
+  display: none;
 }/*# sourceMappingURL=restaurantStyle.css.map */
