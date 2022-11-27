@@ -1,12 +1,13 @@
-window.onload = () => {
 let basket = {}
 let openBasket = document.querySelector('.header__container-button')
 let closeBasket = document.querySelector('.basket__close')
+let fullCost = document.querySelector('.basket__cost')
 let overlay = document.querySelector('.fixed-overlay')
 let cards = document.querySelectorAll('.card')
 let exit = document.querySelector('.basket__out')
 let basketItem = document.querySelector('.item-basket')
 let itemsContainer = document.querySelector('.basket__container')
+let isEmpty = document.querySelector('.basket__empty')
 let item = basketItem.cloneNode(true)
 basketItem.style.display = 'none'
 for(let card of cards){
@@ -26,6 +27,14 @@ for(let card of cards){
 openBasket.addEventListener('click',function(){
     overlay.classList.toggle('disable')
     itemsContainer.innerHTML = ''
+    
+    if(!(Object.values(basket).length > 0)){
+        fullCost.style.display = 'none'
+        isEmpty.style.display = 'inline'
+    }else{
+        fullCost.style.display = 'flex'
+        isEmpty.style.display = 'none'
+    }
     for(let key in basket){
         let item = basketItem.cloneNode(true)
         item.style.display = 'flex'
@@ -39,7 +48,6 @@ openBasket.addEventListener('click',function(){
         plus.addEventListener('click',function(){
             basket[key]['count']++
             item.querySelector('.item__count').textContent++
-            console.log(basket)
         })
         minus.addEventListener('click',function(){
             basket[key]['count']--
@@ -47,10 +55,18 @@ openBasket.addEventListener('click',function(){
             if(basket[key]['count']==0){
                 itemsContainer.removeChild(item)
                 delete basket[key]
+                if(!(Object.values(basket).length > 0)){
+                    fullCost.style.display = 'none'
+                    isEmpty.style.display = 'inline'
             }
-            console.log(basket)
+            }
         })
         itemsContainer.appendChild(item)
+        let sum = 0
+        for(let key in basket){
+            sum += basket[key]['count'] * basket[key]['cost']
+        }
+        fullCost.textContent = sum + ' ₽'
     }
 })
 closeBasket.addEventListener('click',function(){
@@ -59,4 +75,4 @@ closeBasket.addEventListener('click',function(){
 exit.addEventListener('click',function(){
     overlay.classList.toggle('disable')
 })
-}
+
